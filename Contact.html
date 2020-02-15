@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <ul class="tab">
+
+        <button>
+            <li><a href="Home.html">Home</a></li>
+        </button>
+        <button>
+                <li><a href="login.html">Log In</a></li>
+       </button>
+        <button>
+            <li><a href="About Us.html">About Us</a></li>
+        </button>
+        <button>
+            <li><a href="Service.html">Services</a></li>
+        </button>
+        <button>
+            <li><a href="video.html">Videos</a></li>
+        </button>
+        <button>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </button>
+        <button>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </button> 
+        
+        </ul>
+        <div class="middle">
+             <p>Hi, I would love to hear from you</p>
+
+              <br>
+            <h2>This could be the beginning of a beautiful Friendship!</h2>
+
+             <p>If you come about any problem, I may be able to help you solve,
+             <br>
+            Please use the online form below and I'll Contact you ASAP
+</div>
+<form>
+        <label for="name">Client name:</label>
+        <br>
+        <input type="text" name="client name" id='fname'>
+        <br>
+        Email:
+        <br>
+        <input type="email" name="email" id='email'>
+        <br>
+        <label> Password:</label>
+        <br>
+        <input type="password" name="password" id='pass'>
+        <br>
+     <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Leave us a comment..."></textarea>
+        <br>
+        <input type="button" value="submit" onclick="validate()"; />
+</form>
+    <div class="lastdiv">
+
+            <h1>Designed; by Nabukenya Confred</h1>
+        <p>Follow us on</p>
+        <ul>
+                <li><a href="https://www.google.com"><img src="facebook-box.png"/></a></li>
+                <li><a href="https://www.google.com"><img src="twitter-box.png"/></a></li>
+                <li><a href="https://www.google.com"><img src="instagram.png"/></a></li>
+             </ul>
+        <p class="bit">@
+            <strong>Shan's Photo Studio Ltd 2019</strong>
+            <br>
+            <strong>Contacts & Location</strong>
+            <br>
+            <strong>Tel:+256774598303/+256702844973</strong>
+            <br>
+            <strong>Website:www.shanphotstd.com</strong>
+            <br>
+            <strong>Email:shanphotstd@hotmail.com</strong>
+
+        </p>
+    </div>
+    <script>
+        function validate() {
+            let name, email, password, phone;
+            name = document.getElementById('fname').value;
+            email = document.getElementById('email').value;
+            password = document.getElementById('pass').value;
+         
+
+            if (name == "" && email == "" && password == "") {
+                alert("You can not submit an empty form");
+            } else if (name == "") {
+                alert("please enter your name");
+            } else if (password == "") {
+                alert("please enter your password");
+            } else if (email == "") {
+                alert("please enter your email");
+            } else {
+                window.open("Home.html", "_self");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
